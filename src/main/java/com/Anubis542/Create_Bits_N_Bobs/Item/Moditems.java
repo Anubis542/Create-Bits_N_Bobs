@@ -2,6 +2,7 @@ package com.Anubis542.Create_Bits_N_Bobs.Item;
 
 import com.Anubis542.Create_Bits_N_Bobs.CreateBitsNBobs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -14,7 +15,8 @@ public class Moditems {
     //repeat this unit for each item, bit in the main & assets stuff(including PNG in textures)
     public static final RegistryObject<Item> Copper_Wire = ITEMS.register("copper_wire",
             () -> new Item(new Item.Properties()));
-
+    public static final RegistryObject<Item> Iron_Wire = ITEMS.register("iron_wire",
+            () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

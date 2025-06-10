@@ -47,6 +47,7 @@ public class CreateBitsNBobs {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(Moditems.Copper_Wire);
+            event.accept(Moditems.Iron_Wire);
         }
     }
 
