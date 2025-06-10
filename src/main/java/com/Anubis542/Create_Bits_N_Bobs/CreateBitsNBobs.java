@@ -31,7 +31,7 @@ public class CreateBitsNBobs {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-        ModItems.register(modEventBus);
+        Moditems.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
