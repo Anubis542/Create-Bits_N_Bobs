@@ -2,7 +2,6 @@ package com.Anubis542.Create_Bits_N_Bobs.Item;
 
 import com.Anubis542.Create_Bits_N_Bobs.CreateBitsNBobs;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;

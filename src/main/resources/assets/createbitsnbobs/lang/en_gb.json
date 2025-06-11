@@ -1,4 +1,10 @@
 {
   "item.createbitsnbobs.copper_wire": "Copper Wire",
-  "item.createbitsnbobs.iron_wire": "Iron Wire"
+  "item.createbitsnbobs.iron_wire": "Iron Wire",
+  "item.createbitsnbobs.copper_nugget": "Copper Nugget",
+
+  "block.createbitsnbobs.copper_cable": "Copper Cable",
+  "block.createbitsnbobs.iron_cable": "Iron Cable",
+
+  "creativetab.createbitsnbobs.create_bits_n_bobs_items": "Create Bits 'N' Bobs"
 }
