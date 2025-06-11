@@ -22,6 +22,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .isRedstoneConductor().instabreak().requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
+    public static final RegistryObject<Block> IRON_CABLE = registerBlock("iron_cable",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .isRedstoneConductor().instabreak().requiresCorrectToolForDrops().sound(SoundType.METAL)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

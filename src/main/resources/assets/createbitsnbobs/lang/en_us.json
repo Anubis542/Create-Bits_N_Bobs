@@ -1,4 +1,7 @@
 {
   "item.createbitsnbobs.copper_wire": "Copper Wire",
-  "item.createbitsnbobs.iron_wire": "Iron Wire"
+  "item.createbitsnbobs.iron_wire": "Iron Wire",
+
+  "block.createbitsnbobs.copper_cable": "Copper Cable",
+  "block.createbitsnbobs.iron_cable": "Iron Cable"
 }

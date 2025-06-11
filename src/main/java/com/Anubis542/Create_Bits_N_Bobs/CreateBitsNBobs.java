@@ -54,6 +54,7 @@ public class CreateBitsNBobs {
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.COPPER_CABLE);
+            event.accept(ModBlocks.IRON_CABLE);
         }
     }
 
