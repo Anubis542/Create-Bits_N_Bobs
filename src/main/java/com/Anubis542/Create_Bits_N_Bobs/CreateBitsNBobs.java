@@ -1,6 +1,7 @@
 package com.Anubis542.Create_Bits_N_Bobs;
 
 import com.Anubis542.Create_Bits_N_Bobs.Item.ModCreativeModeTabs;
+import com.Anubis542.Create_Bits_N_Bobs.Item.ModItems;
 import com.Anubis542.Create_Bits_N_Bobs.Item.Moditems;
 import com.Anubis542.Create_Bits_N_Bobs.block.ModBlocks;
 import com.mojang.logging.LogUtils;
@@ -51,8 +52,8 @@ public class CreateBitsNBobs {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(Moditems.COPPER_WIRE);
-            event.accept(Moditems.IRON_WIRE);
+            event.accept(ModItems.COPPER_WIRE);
+            event.accept(ModItems.IRON_WIRE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
