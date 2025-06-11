@@ -3,5 +3,7 @@
   "item.createbitsnbobs.iron_wire": "Iron Wire",
 
   "block.createbitsnbobs.copper_cable": "Copper Cable",
-  "block.createbitsnbobs.iron_cable": "Iron Cable"
+  "block.createbitsnbobs.iron_cable": "Iron Cable",
+
+  "creativetab.createbitsnbobs.create_bits_n_bobs_items": "Create Bits 'N' Bobs"
 }

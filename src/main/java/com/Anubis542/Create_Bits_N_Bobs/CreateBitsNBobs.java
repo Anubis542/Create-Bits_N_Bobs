@@ -1,5 +1,6 @@
 package com.Anubis542.Create_Bits_N_Bobs;
 
+import com.Anubis542.Create_Bits_N_Bobs.Item.ModCreativeModeTabs;
 import com.Anubis542.Create_Bits_N_Bobs.Item.Moditems;
 import com.Anubis542.Create_Bits_N_Bobs.block.ModBlocks;
 import com.mojang.logging.LogUtils;
@@ -32,6 +33,8 @@ public class CreateBitsNBobs {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         Moditems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -48,8 +51,8 @@ public class CreateBitsNBobs {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(Moditems.Copper_Wire);
-            event.accept(Moditems.Iron_Wire);
+            event.accept(Moditems.COPPER_WIRE);
+            event.accept(Moditems.IRON_WIRE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
