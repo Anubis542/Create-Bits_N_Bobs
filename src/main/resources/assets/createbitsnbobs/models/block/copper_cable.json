@@ -1,6 +1,25 @@
+
 {
-  "parent": "minecraft:block/cube_all",
+  "ambientocclusion": false,
   "textures": {
-    "all": "createbitsnbobs:block/copper_cable"
-  }
+    "particle": "createbitsnbobs:block/copper cable",
+    "bars": "createbitsnbobs:block/copper cable",
+    "edge": "createbitsnbobs:block/copper cable"
+  },
+  "elements": [
+    {   "from": [ 8, 0, 8 ],
+      "to": [ 8, 16, 9 ],
+      "faces": {
+        "west": { "uv": [ 8, 0, 7, 16 ], "texture": "#bars", "cullface": "west" },
+        "east": { "uv": [ 7, 0, 8, 16 ], "texture": "#bars", "cullface": "east" }
+      }
+    },
+    {   "from": [ 7, 0, 9 ],
+      "to": [ 9, 16, 9 ],
+      "faces": {
+        "north": { "uv": [ 9, 0, 7, 16 ], "texture": "#bars", "cullface": "north" },
+        "south": { "uv": [ 7, 0, 9, 16 ], "texture": "#bars", "cullface": "south" }
+      }
+    }
+  ]
 }

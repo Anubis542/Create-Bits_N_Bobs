@@ -2,7 +2,6 @@ package com.Anubis542.Create_Bits_N_Bobs.block;
 
 import com.Anubis542.Create_Bits_N_Bobs.CreateBitsNBobs;
 import com.Anubis542.Create_Bits_N_Bobs.Item.ModItems;
-import com.Anubis542.Create_Bits_N_Bobs.Item.Moditems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -21,11 +20,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> COPPER_CABLE = registerBlock("copper_cable",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .isRedstoneConductor().instabreak().requiresCorrectToolForDrops().sound(SoundType.METAL)));
+                    .isRedstoneConductor(BlockBehaviour.BlockStateBase::isRedstoneConductor).instabreak().requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
     public static final RegistryObject<Block> IRON_CABLE = registerBlock("iron_cable",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .isRedstoneConductor().instabreak().requiresCorrectToolForDrops().sound(SoundType.METAL)));
+                    .isRedstoneConductor(BlockBehaviour.BlockStateBase::isRedstoneConductor).instabreak().requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
@@ -35,7 +34,7 @@ public class ModBlocks {
     }
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()))
+        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {

@@ -2,7 +2,6 @@ package com.Anubis542.Create_Bits_N_Bobs;
 
 import com.Anubis542.Create_Bits_N_Bobs.Item.ModCreativeModeTabs;
 import com.Anubis542.Create_Bits_N_Bobs.Item.ModItems;
-import com.Anubis542.Create_Bits_N_Bobs.Item.Moditems;
 import com.Anubis542.Create_Bits_N_Bobs.block.ModBlocks;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -36,7 +35,7 @@ public class CreateBitsNBobs {
 
         ModCreativeModeTabs.register(modEventBus);
 
-        Moditems.register(modEventBus);
+        ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
@@ -54,6 +53,7 @@ public class CreateBitsNBobs {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.COPPER_WIRE);
             event.accept(ModItems.IRON_WIRE);
+            event.accept(ModItems.COPPER_NUGGET);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
